@@ -1,0 +1,11 @@
+<h1>Tweets</h1>
+
+  <%= form_tag("/tweet", method: "get") do %> <!-- remote => true -->
+  <%= label_tag(:searchterm, "Search for tweets") %><br>
+  <%= text_field_tag(:searchterm) %>
+  <%= submit_tag("Search") %>
+  <% end %>
+
+<div id="tweets">
+
+<div>
